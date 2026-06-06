@@ -1,0 +1,1 @@
+function e(e,t){return t?+(e-t/100*e).toFixed(2):e}export{e as t};
