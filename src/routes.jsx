@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 
 // Layouts
 import DashboardLayout from "./components/layouts/DashboardLayout";
@@ -31,7 +31,8 @@ import NewArrivals from "./page/NewArrivals/page";
 import Deals from "./page/Deals/page";
 import Brands from "./page/Brands/page";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
+
   {
     path: "/",
     element: <DashboardLayout />,

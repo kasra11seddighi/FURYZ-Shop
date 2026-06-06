@@ -1,11 +1,11 @@
-const featuredImg = "/image/blog-featured.png";
-const blog1Img = "/image/blog-1.png";
-const blog2Img = "/image/blog-2.png";
-const blog3Img = "/image/blog-3.png";
-const blog4Img = "/image/blog-4.png";
-const blog5Img = "/image/blog-5.png";
-const blog6Img = "/image/blog-6.png";
-const blog7Img = "/image/blog-7.png";
+const featuredImg = "image/blog-featured.png";
+const blog1Img = "image/blog-1.png";
+const blog2Img = "image/blog-2.png";
+const blog3Img = "image/blog-3.png";
+const blog4Img = "image/blog-4.png";
+const blog5Img = "image/blog-5.png";
+const blog6Img = "image/blog-6.png";
+const blog7Img = "image/blog-7.png";
 
 export const blogPosts = [
   {

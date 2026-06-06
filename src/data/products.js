@@ -13,7 +13,7 @@ export const products = [
     isNew: true,
     rating: 4.6,
     reviews: 128,
-    image: "/image/shoe.png",
+    image: "image/shoe.png",
     badge: "NEW",
     stock: 15,
     description: "Experience elite performance with advanced cushioning."
@@ -31,7 +31,7 @@ export const products = [
     isNew: false,
     rating: 4.5,
     reviews: 96,
-    image: "/image/shoe.png",
+    image: "image/shoe.png",
     badge: "HOT",
     stock: 22
   },
@@ -49,7 +49,7 @@ export const products = [
     isNew: true,
     rating: 4.5,
     reviews: 84,
-    image: "/image/shoe.png",
+    image: "image/shoe.png",
     badge: "NEW",
     stock: 12
   },
@@ -66,7 +66,7 @@ export const products = [
     isNew: false,
     rating: 4.9,
     reviews: 45,
-    image: "/image/shoe.png",
+    image: "image/shoe.png",
     badge: "BEST",
     stock: 8
   },
@@ -85,7 +85,7 @@ export const products = [
     isNew: true,
     rating: 4.7,
     reviews: 210,
-    image: "/image/hoodie.png",
+    image: "image/hoodie.png",
     badge: "NEW",
     stock: 10
   },
@@ -102,7 +102,7 @@ export const products = [
     isNew: false,
     rating: 4.4,
     reviews: 140,
-    image: "/image/hoodie.png",
+    image: "image/hoodie.png",
     badge: "SALE",
     stock: 45
   },
@@ -119,7 +119,7 @@ export const products = [
     isNew: true,
     rating: 4.4,
     reviews: 55,
-    image: "/image/hoodie.png",
+    image: "image/hoodie.png",
     badge: "NEW",
     stock: 35
   },
@@ -136,7 +136,7 @@ export const products = [
     isNew: false,
     rating: 4.8,
     reviews: 32,
-    image: "/image/hoodie.png",
+    image: "image/hoodie.png",
     badge: "TREND",
     stock: 20
   },
@@ -156,7 +156,7 @@ export const products = [
     isNew: true,
     rating: 4.8,
     reviews: 72,
-    image: "/image/ball.png",
+    image: "image/ball.png",
     badge: "NEW",
     stock: 30
   },
@@ -174,7 +174,7 @@ export const products = [
     isNew: true,
     rating: 4.5,
     reviews: 90,
-    image: "/image/ball.png",
+    image: "image/ball.png",
     badge: "OFFER",
     stock: 18
   },
@@ -191,7 +191,7 @@ export const products = [
     isNew: true,
     rating: 4.6,
     reviews: 143,
-    image: "/image/ball.png",
+    image: "image/ball.png",
     badge: "NEW",
     stock: 50
   },
@@ -208,7 +208,7 @@ export const products = [
     isNew: true,
     rating: 4.8,
     reviews: 208,
-    image: "/image/ball.png",
+    image: "image/ball.png",
     badge: "HOT",
     stock: 80
   },
@@ -227,7 +227,7 @@ export const products = [
     isNew: true,
     rating: 4.9,
     reviews: 210,
-    image: "/image/protein.png",
+    image: "image/protein.png",
     badge: "BEST",
     stock: 100
   },
@@ -244,7 +244,7 @@ export const products = [
     isNew: false,
     rating: 4.6,
     reviews: 410,
-    image: "/image/protein.png",
+    image: "image/protein.png",
     badge: "SALE",
     stock: 60
   },
@@ -261,7 +261,7 @@ export const products = [
     isNew: true,
     rating: 4.3,
     reviews: 88,
-    image: "/image/protein.png",
+    image: "image/protein.png",
     badge: "NEW",
     stock: 40
   },
@@ -280,7 +280,7 @@ export const products = [
     isNew: false,
     rating: 4.7,
     reviews: 150,
-    image: "/image/ball.png",
+    image: "image/ball.png",
     badge: "TOP",
     stock: 100
   },
@@ -297,7 +297,7 @@ export const products = [
     isNew: true,
     rating: 5.0,
     reviews: 12,
-    image: "/image/shoe.png",
+    image: "image/shoe.png",
     badge: "LIMITED",
     stock: 5
   },
@@ -314,7 +314,7 @@ export const products = [
     isNew: false,
     rating: 4.8,
     reviews: 500,
-    image: "/image/shoe.png",
+    image: "image/shoe.png",
     badge: "POPULAR",
     stock: 25
   },
@@ -331,7 +331,7 @@ export const products = [
     isNew: false,
     rating: 4.6,
     reviews: 310,
-    image: "/image/ball.png",
+    image: "image/ball.png",
     badge: "",
     stock: 40
   },
@@ -348,7 +348,7 @@ export const products = [
     isNew: false,
     rating: 4.7,
     reviews: 120,
-    image: "/image/protein.png",
+    image: "image/protein.png",
     badge: "SALE",
     stock: 55
   }
