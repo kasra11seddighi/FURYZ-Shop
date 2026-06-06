@@ -1,4 +1,5 @@
 import { createHashRouter } from "react-router";
+import { lazy } from "react";
 
 // Layouts
 import DashboardLayout from "./components/layouts/DashboardLayout";
@@ -6,39 +7,35 @@ import DashboardLayout from "./components/layouts/DashboardLayout";
 // Guard
 import ProtectedRoute from "./components/common/ProtectedRoute";
 
-// Auth Pages
-import LoginPage from "./page/Login/page";
-import RegisterPage from "./page/Register/page"; 
+// Lazy Pages
+const LoginPage = lazy(() => import("./page/Login/page"));
+const RegisterPage = lazy(() => import("./page/Register/page"));
 
-// General Pages
-import Home from "./page/Home/page";
-import Shop from "./page/Shop/page";
-// import Categories from "./page/Categories/page"; // حذف شد
-// import Category from "./page/Category/page"; // حذف شد
-import Product from "./page/Product/page";
-import Cart from "./page/Cart/page";
-import Profile from "./page/Profile/page";
-import About from "./page/About/page";
-import Blog from "./page/Blog/page";
-import NotFound from "./page/NotFound/page";
-import BlogDetailsPage from "./page/Blog/BlogDetailsPage";
-import SearchResults from "./page/SearchResults/SearchResults"
-import Checkout from "./page/Checkout/page.jsx";
-import Payment from "./page/Payment/page.jsx";
+const Home = lazy(() => import("./page/Home/page"));
+const Shop = lazy(() => import("./page/Shop/page"));
+const Product = lazy(() => import("./page/Product/page"));
+const Cart = lazy(() => import("./page/Cart/page"));
+const Profile = lazy(() => import("./page/Profile/page"));
+const About = lazy(() => import("./page/About/page"));
+const Blog = lazy(() => import("./page/Blog/page"));
+const BlogDetailsPage = lazy(() => import("./page/Blog/BlogDetailsPage"));
+const SearchResults = lazy(() => import("./page/SearchResults/SearchResults"));
+const Checkout = lazy(() => import("./page/Checkout/page.jsx"));
+const Payment = lazy(() => import("./page/Payment/page.jsx"));
 
-// Header Menu Pages
-import NewArrivals from "./page/NewArrivals/page";
-import Deals from "./page/Deals/page";
-import Brands from "./page/Brands/page";
+const NewArrivals = lazy(() => import("./page/NewArrivals/page"));
+const Deals = lazy(() => import("./page/Deals/page"));
+const Brands = lazy(() => import("./page/Brands/page"));
+
+const NotFound = lazy(() => import("./page/NotFound/page"));
 
 const router = createHashRouter([
-
   {
     path: "/",
     element: <DashboardLayout />,
     children: [
       { index: true, element: <Home /> },
-      { path: "shop", element: <Shop /> }, // اصلاح کاما
+      { path: "shop", element: <Shop /> },
       { path: "new", element: <NewArrivals /> },
       { path: "sale", element: <Deals /> },
       { path: "brands", element: <Brands /> },
@@ -46,35 +43,22 @@ const router = createHashRouter([
       { path: "blog", element: <Blog /> },
       { path: "blog/:slug", element: <BlogDetailsPage /> },
       { path: "payment", element: <Payment /> },
-
-{
-  path: "product/:slug",
-  element: <Product />,
-},
-{ path: "search", element: <SearchResults /> }, 
+      { path: "product/:slug", element: <Product /> },
+      { path: "search", element: <SearchResults /> },
       { path: "cart", element: <Cart /> },
       { path: "checkout", element: <Checkout /> },
-
 
       { path: "login", element: <LoginPage /> },
       { path: "register", element: <RegisterPage /> },
 
-      { 
-        path: "profile", 
+      {
+        path: "profile",
         element: (
           <ProtectedRoute>
             <Profile />
           </ProtectedRoute>
-        ) 
+        ),
       },
-      // { 
-      //   path: "wishlist", 
-      //   element: (
-      //     <ProtectedRoute>
-      //       <Wishlist />
-      //     </ProtectedRoute>
-      //   ) 
-      // },
 
       { path: "*", element: <NotFound /> },
     ],

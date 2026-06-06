@@ -12,7 +12,7 @@ export default function Logo() {
       aria-label="Go home"
     >
       <img
-        src="/image/Logo.png"
+        src="image/Logo.png"
         alt="Furyz Logo"
         className="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover border border-white/10"
       />

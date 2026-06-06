@@ -1,6 +1,6 @@
 import HeroLeft from "./components/HeroLeft";
 
-const heroBg = "/image/backT.png";
+const heroBg = "image/backT.png";
 
 export default function Hero() {
   return (
