@@ -1,0 +1,7 @@
+import{c as e,y as t}from"./index-CanIvEEq.js";var n=e();function r(){let e=t();return(0,n.jsx)(`section`,{className:`min-h-screen bg-black text-white flex items-center justify-center px-6`,children:(0,n.jsxs)(`div`,{className:`w-full max-w-xl text-center`,children:[(0,n.jsx)(`p`,{className:`text-lime-400 text-sm font-bold tracking-[0.3em] uppercase`,children:`Error 404`}),(0,n.jsx)(`h1`,{className:`mt-4 text-5xl md:text-6xl font-extrabold`,children:`Page Not Found`}),(0,n.jsx)(`p`,{className:`mt-4 text-white/65 text-sm md:text-base leading-7`,children:`The page you’re looking for doesn’t exist or may have been moved.`}),(0,n.jsxs)(`div`,{className:`mt-8 flex flex-wrap items-center justify-center gap-3`,children:[(0,n.jsx)(`button`,{type:`button`,onClick:()=>{if(window.history.length>1){e(-1);return}e(`/`,{replace:!0})},className:`inline-flex items-center justify-center rounded-xl\r
+                       border border-lime-400/30 bg-lime-400 px-5 py-3\r
+                       text-sm font-bold text-black transition\r
+                       hover:bg-lime-300`,children:`Go Back`}),(0,n.jsx)(`button`,{type:`button`,onClick:()=>e(`/`),className:`inline-flex items-center justify-center rounded-xl\r
+                       border border-white/15 bg-white/5 px-5 py-3\r
+                       text-sm font-bold text-white transition\r
+                       hover:bg-white/10`,children:`Home`})]})]})})}export{r as default};
