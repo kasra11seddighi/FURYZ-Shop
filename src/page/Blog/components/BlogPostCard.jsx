@@ -1,4 +1,6 @@
 import { Link } from "react-router";
+import { useState } from "react";
+import Skeleton from "../../../components/common/ui/Skeleton";
 
 export default function BlogPostCard({
   slug,
@@ -10,17 +12,27 @@ export default function BlogPostCard({
   date,
   readTime,
 }) {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
     <Link to={`/blog/${slug}`} className="block">
       <article
         className="group overflow-hidden rounded-2xl border border-lime-400/10 bg-[#111111]
                    transition hover:border-lime-400/30 hover:bg-[#151515]"
       >
-        <div className="overflow-hidden">
+        <div className="relative overflow-hidden h-56 w-full">
+
+          {!isLoaded && (
+            <Skeleton className="absolute inset-0 h-full w-full" />
+          )}
+
           <img
             src={image}
             alt={title}
-            className="h-56 w-full object-cover transition duration-500 group-hover:scale-105"
+            loading="lazy"
+            onLoad={() => setIsLoaded(true)}
+            className={`h-full w-full object-cover transition duration-500 group-hover:scale-105
+            ${isLoaded ? "opacity-100" : "opacity-0"}`}
           />
         </div>
 
