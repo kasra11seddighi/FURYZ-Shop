@@ -1,4 +1,4 @@
-import { useLocalStorage } from "../../context/hooks/useLocalStorage";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 import toast from "react-hot-toast";
 import { Plus, Minus, ShoppingCart } from "lucide-react";
 import { useAuth } from "../../context/AuthContext";

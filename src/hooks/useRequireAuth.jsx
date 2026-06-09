@@ -1,5 +1,5 @@
 // hooks/useRequireAuth.js
-import { useAuth } from "../AuthContext";
+import { useAuth } from "../context/AuthContext";
 import { useNavigate, useLocation } from "react-router";
 import { toast } from "react-hot-toast";
 

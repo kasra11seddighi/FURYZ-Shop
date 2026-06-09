@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../../context/AuthContext";
-import { useLocalStorage } from "../../context/hooks/useLocalStorage";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 // Components
 import Addresses from "./Components/Addresses";

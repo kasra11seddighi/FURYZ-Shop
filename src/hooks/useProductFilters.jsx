@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect } from "react";
-import { calculateDiscount } from "../../utils/calculateDiscount";
+import { calculateDiscount } from "../utils/calculateDiscount";
 
 export function useProductFilters(products, itemsPerPage = 6) {
 

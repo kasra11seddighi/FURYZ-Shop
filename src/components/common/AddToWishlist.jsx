@@ -1,7 +1,7 @@
 import { Heart } from "lucide-react";
 import { useRef } from "react";
 import toast from "react-hot-toast";
-import { useLocalStorage } from "../../context/hooks/useLocalStorage";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 import { useAuth } from "../../context/AuthContext";
 import { useNavigate, useLocation } from "react-router";
 

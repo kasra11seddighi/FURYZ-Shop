@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { useNavigate } from "react-router";
-import { useLocalStorage } from "../../../context/hooks/useLocalStorage"; 
+import { useLocalStorage } from "../../../hooks/useLocalStorage"; 
 const ShoppingCart = () => {
   const [open, setOpen] = useState(false);
   const cartRef = useRef(null);

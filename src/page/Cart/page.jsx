@@ -1,4 +1,4 @@
-import { useLocalStorage } from "../../context/hooks/useLocalStorage";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 import { HiOutlineTrash, HiOutlineMinus, HiOutlinePlus, HiOutlineArrowLeft } from "react-icons/hi";
 import { Link, useNavigate } from "react-router";
 

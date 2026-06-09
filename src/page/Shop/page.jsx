@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useSearchParams } from "react-router";
 import FilterPanel from "./components/FilterPanel";
 import ProductCard from "./components/ProductCard";
-import { useProductFilters } from "../../context/hooks/useProductFilters";
+import { useProductFilters } from "../../hooks/useProductFilters";
 import { products } from "../../data/products";
 import Pagination from "../../components/common/Pagination";
 

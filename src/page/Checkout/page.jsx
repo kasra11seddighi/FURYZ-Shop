@@ -1,4 +1,4 @@
-import { useLocalStorage } from "../../context/hooks/useLocalStorage";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 import { useNavigate } from "react-router";
 const Cart = () => {
     const navigate = useNavigate();

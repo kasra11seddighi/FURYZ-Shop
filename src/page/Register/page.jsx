@@ -5,7 +5,7 @@ import { Eye, EyeOff, Loader2, Mail, User, Lock, MapPin } from "lucide-react";
 import { registerSchema } from "./registerSchema";
 
 import { useAuth } from "../../context/AuthContext";
-import { useLocalStorage } from "../../context/hooks/useLocalStorage";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 import { useNavigate, Link } from "react-router";
 import { toast } from "react-hot-toast";

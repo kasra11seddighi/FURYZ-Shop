@@ -1,9 +1,12 @@
+import { useState } from "react"; // ۱. اضافه کردن useState
 import { useNavigate } from "react-router";
 import { calculateDiscount } from "../../../utils/calculateDiscount";
 import AddToCart from "../../../components/common/AddToCard";
 import AddToWishlist from "../../../components/common/AddToWishlist";
+import Skeleton from "../../../components/common/ui/Skeleton"; // ۲. ایمپورت سکلتون (آدرس را چک کن)
 
 export default function ProductCard({ product }) {
+  const [isLoaded, setIsLoaded] = useState(false); // ۳. استیت برای وضعیت لود تصویر
   const navigate = useNavigate();
 
   const finalPrice = calculateDiscount(
@@ -21,8 +24,13 @@ export default function ProductCard({ product }) {
       className="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer"
     >
       <div className="relative aspect-square overflow-hidden bg-gray-100">
+        
+        {/* ۴. نمایش سکلتون تا زمانی که عکس لود نشده */}
+        {!isLoaded && (
+          <Skeleton className="absolute inset-0 z-10 w-full h-full" variant="rectangle" />
+        )}
 
-        {/* ✅ Wishlist Button (Reusable + Auth Guard) */}
+        {/* Wishlist Button */}
         <div
           className="absolute z-20 top-3 right-3"
           onClick={(e) => e.stopPropagation()}
@@ -37,7 +45,10 @@ export default function ProductCard({ product }) {
         <img
           src={product.image}
           alt={product.name}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          onLoad={() => setIsLoaded(true)} // ۵. وقتی لود شد، استیت را تغییر بده
+          className={`w-full h-full object-cover transition-all duration-500 group-hover:scale-110 ${
+            isLoaded ? "opacity-100" : "opacity-0"
+          }`} // ۶. مخفی کردن عکس تا زمان لود کامل برای جلوگیری از پرش
         />
       </div>
 

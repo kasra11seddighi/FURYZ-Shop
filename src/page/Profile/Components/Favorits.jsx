@@ -2,7 +2,7 @@
 
 import { products } from "../../../data/products";
 import { HiOutlineTrash, HiOutlineShoppingCart } from "react-icons/hi";
-import { useLocalStorage } from "../../../context/hooks/useLocalStorage";
+import { useLocalStorage } from "../../../hooks/useLocalStorage";
 
 export default function Favorits() {
 

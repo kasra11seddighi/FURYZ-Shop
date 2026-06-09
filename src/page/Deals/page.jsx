@@ -2,7 +2,7 @@
 
 import { products } from "../../data/products";
 import ProductCard from "../Shop/components/ProductCard";
-import { useProductFilters } from "../../context/hooks/useProductFilters";
+import { useProductFilters } from "../../hooks/useProductFilters";
 import Pagination from "../../components/common/Pagination";
 
 export default function Page() {
