@@ -2,12 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Send, MessageCircle, X, Loader2 } from 'lucide-react';
 import OpenAI from 'openai';
 import { products } from './../../../data/products';
+const KEY="sk-aPgNdDH4FFRkyxYgrUrjEa2c8mtoAkbwzZf9QWEjHcExBctQ"
 
 const openai = new OpenAI({
-  apiKey: import.meta.env.VITE_OPENAI_KEY, // کلید اصلاح شده طبق درخواست شما
+  apiKey:KEY,
   baseURL: "https://api.gapgpt.app/v1",
   dangerouslyAllowBrowser: true
 });
+
 
 const ChatSupport = () => {
   const [isOpen, setIsOpen] = useState(false);
