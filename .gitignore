@@ -1,28 +1,36 @@
-```text
-# مشخصات سیستم و ویرایشگرها
+# =========================
+# OS / Editor files
+# =========================
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-Thumbs.db
+*.swp
 
-# پوشه وابستگی‌ها (بسیار مهم)
+# =========================
+# Dependencies
+# =========================
 node_modules/
 jspm_packages/
 
-# خروجی‌های Build (فایل‌هایی که بعد از npm run build ساخته می‌شوند)
+# =========================
+# Build outputs
+# =========================
 dist/
 dist-ssr/
-*.mjs.map
 build/
+*.mjs.map
 
-# لاگ‌ها
-logs
+# =========================
+# Logs
+# =========================
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -30,7 +38,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# فایل‌های محیطی و حساس (بسیار مهم برای امنیت)
+# =========================
+# Environment / Secrets
+# =========================
 .env
 .env.local
 .env.development.local
@@ -38,16 +48,38 @@ lerna-debug.log*
 .env.production.local
 *.local
 
-# خروجی‌های تست
-/coverage
-/.nyc_output
+# =========================
+# Test / Coverage
+# =========================
+coverage/
+.nyc_output/
 
-# فایل‌های مربوط به پکیج‌منیجرها
-.npm
+# =========================
+# Cache files
+# =========================
+.npm/
 .eslintcache
 .stylelintcache
-
-# فایل‌های موقت سیستم
 .cache/
 .parcel-cache/
-```
+.vite/
+
+# =========================
+# Optional package manager files
+# =========================
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# Misc
+# =========================
+tmp/
+temp/
